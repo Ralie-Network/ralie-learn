@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-import Course1 from "../ui/course-1.png";
+import Course1 from "../ui/course-1.jpg";
 import Course2 from "../ui/course-2.jpg";
 
 function CoursePage(props){

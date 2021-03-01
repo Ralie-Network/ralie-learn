@@ -32,14 +32,9 @@ function Sidebar(){
 
     return (
         <div className="sidebar rel">
-            <a href="#" className="logo bl">
-                <img src="https://i.imgur.com/O3SGjXa.png"  />
-            </a>
-
             <ul className="nav">
                 {navigation}
             </ul>
-
             <div className="updated-course flex aic">
                 <div className="icon-lamp-bright cfff s24 ico" />
                 <div className="lbl s15 fontb c333">
@@ -53,7 +48,7 @@ function Sidebar(){
                 <div className="stats-box flex">
                     <div className="ico ico-points s24 icon-shield" />
                     <h2 className="val s15 c333 fontb">10</h2>
-                    <h2 className="lbl s13 c777">Reward points</h2>
+                    <h2 className="lbl s13 c777">Points</h2>
                 </div>
 
                 <div className="stats-box flex">

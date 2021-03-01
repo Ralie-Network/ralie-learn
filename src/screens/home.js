@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import Course1 from "../ui/course-1.png";
+import Course1 from "../ui/course-1.jpg";
 import Course2 from "../ui/course-2.jpg";
 import Course3 from "../ui/course-3.jpg"
 
@@ -21,7 +21,7 @@ function HomePage(){
                 ID: 1,
                 name: "Timmy Johnson",
                 username: "EpicDev3000",
-                dp: "https://miro.medium.com/max/2410/1*xIzdc_FVszgB3cCaqMd5ZQ.png" + 1,
+                dp: "http://placeimg.com/100/100/people?tutors-" + 1,
             },
             duration: "82 min",            
             poster: Course1
@@ -32,7 +32,8 @@ function HomePage(){
             tutor: {
                 ID: 2,
                 name: "CoolDude",
-                dp: "https://cdn.pixabay.com/photo/2017/06/23/10/48/code-2434271__340.jpg://placeimg.com/100/100/people?tutor-" + 2,
+                username: "AReallyCoolDude",
+                dp: "http://placeimg.com/100/100/people?tutors-" + 2,
             },
             duration: "1 hr 13 min",            
             poster: Course2
@@ -44,7 +45,7 @@ function HomePage(){
                 ID: 3,
                 name: "Tiy Johon",
                 username: "Artist man",
-                dp: "http://headforart.com/wp-content/uploads/2016/12/Constable-650x411.jpg" + 3,
+                dp: "http://placeimg.com/100/100/people?tutors-" + 3,
             },
             duration: "82 min",            
             poster: Course3
