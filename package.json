@@ -3,15 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ledgerhq/hw-transport": "^5.43.0",
+    "@ledgerhq/hw-transport-webusb": "^5.43.0",
+    "@pacote/u64": "^0.1.4",
+    "@project-serum/serum": "^0.13.24",
+    "@project-serum/sol-wallet-adapter": "^0.1.5",
+    "@solana/spl-token": "^0.1.0",
+    "@solana/web3.js": "^0.93.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/bs58": "^4.0.1",
+    "antd": "^4.13.0",
+    "bs58": "^4.0.1",
+    "chalk": "^4.1.0",
     "firebase": "^7.11.0",
     "immer": "^8.0.1",
+    "jazzicon": "^1.5.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^4.0.3",
+    "typescript": "^4.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,5 +46,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.0",
+    "@types/ledgerhq__hw-transport": "^4.21.3",
+    "@types/ledgerhq__hw-transport-webusb": "^4.70.1",
+    "@types/react-router-dom": "^5.1.7",
+    "less": "^4.1.1"
   }
 }
