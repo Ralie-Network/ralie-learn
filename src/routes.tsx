@@ -5,6 +5,8 @@ import { ConnectionProvider } from "./contexts/connection";
 import { AccountsProvider } from "./contexts/accounts";
 import { MarketProvider } from "./contexts/market";
 import { AppLayout } from "./components/Layout";
+import AppRoot from "./AppRoot";
+import AppLoader from "./AppLoader";
 
 import { FaucetView, HomeView } from "./views";
 
@@ -17,6 +19,11 @@ export function Routes() {
             <AccountsProvider>
               <MarketProvider>
                 <AppLayout>
+                 
+                  <AppRoot>
+                     <AppLoader />
+                  </AppRoot>
+
                 </AppLayout>
               </MarketProvider>
             </AccountsProvider>

@@ -24,22 +24,36 @@ import MyCoursesPage from "./screens/mycourses";
 
 import AccountPage from "./screens/oauth";
 
-import * as fire_base from "firebase";
-global.firebase = fire_base;
+// Firebase App (the core Firebase SDK) is always required and must be listed first
+import firebase from "firebase/app";
+// If you are using v7 or any earlier version of the JS SDK, you should import firebase using namespace import
+// import * as firebase from "firebase/app"
+
+// If you enabled Analytics in your project, add the Firebase SDK for Analytics
+import "firebase/analytics";
+
+// Add the Firebase products that you want to use
+import "firebase/auth";
+import "firebase/firestore";
 global.fire = {
     ID: null
 };
+
+
+
 var firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  databaseURL: "YOUR_DB_URL",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
-};
-// Initialize Firebase
-global.firebase.initializeApp(firebaseConfig);
+    apiKey: "AIzaSyC058pK_-UEQaa4rQLpAdO8ev8ZZ3hRhxg",
+    authDomain: "ralie-network.firebaseapp.com",
+    databaseURL: "https://ralie-network-default-rtdb.firebaseio.com",
+    projectId: "ralie-network",
+    storageBucket: "ralie-network.appspot.com",
+    messagingSenderId: "512912623673",
+    appId: "1:512912623673:web:40a8ba17736f9d6fcde5e8",
+    measurementId: "G-41LNPZNPT0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 
 
 
@@ -48,7 +62,7 @@ export default function AppLoader(){
     const [isFireUser, setIsFireUser] = useState(false);
 
     const initFirebase = async (context) => {
-        global.firebase.auth().onAuthStateChanged((user)=>{
+        firebase.auth().onAuthStateChanged((user)=>{
           if(user){
               console.log("You are signed in...")
               setIsFireUser(true);

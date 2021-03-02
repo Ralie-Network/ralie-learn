@@ -2,22 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 20px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgb(211, 83, 83); 
+        border-radius: 10px;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00b39b; 
+      }
+      </style>
+    <link rel="icon" href="%PUBLIC_URL%/logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta name="description" content="Solana DApp Starter" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/color.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -26,40 +42,45 @@
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
-      
     -->
     <title>Ralie Learn</title>
-  </head>
-    
+    <style type="text/css">
+      #root {
+        height: 100%;
+      }
 
-  
+      #root::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        filter: grayscale(100%);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .App {
+        position: relative;
+        height: 100%;
+        text-align: center;
+        min-width: 100%;
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+  </head>
+
   <body>
-    
-    <header class="transition">
-			<div class="container">
-				<div class="row flex-align">
-					<div class="col-lg-4 col-md-3 col-8">
-						<div class="logo">
-							<a href="index.html"><img src="images/ralieLEARN.png" class="transition" alt="Ralie"></a>
-						</div>
-					</div>
-					<div class="col-lg-8 col-md-9 col-4 text-right">
-						<div class="menu-toggle">
-							<span></span>
-						</div>
-						<div class="menu">
-							<div class="signin d-inline-block">
-								<button type="button" class="btn btn-2" id="coolbutton">Connect Sollet</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-
-
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -70,5 +91,11 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 .App{
-    padding: 0px 20px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 /*
@@ -28,7 +28,7 @@ VIDEO PLAYER
     left: 0px;
     right: 0px;
     height: 90px;
-    background: rgb(129, 124, 124);
+    background: rgb(255, 253, 253);
     z-index: 9;
     padding: 0px 15px;
 }
@@ -105,7 +105,7 @@ SIDEBAR
 */
 
 .sidebar .nav{
-    padding: 50px 35px;
+    padding: 50px 0px;
 }
 .sidebar .nav li{}
 .sidebar .nav li a{
@@ -153,7 +153,7 @@ SIDEBAR
 .course-stats .ico-battery, .sidebar .stats .stats-box .ico-battery{color: #ea5252;}
 
 .sidebar .me{
-    padding: 20px 40px;
+    padding: 0px 0px;
 }
 .sidebar .me .photo{
     width: 50px;
@@ -161,7 +161,7 @@ SIDEBAR
     border-radius: 25px;
     overflow: hidden;
     margin-right: 10px;
-    background: rgb(151, 148, 148);
+    background: rgb(255, 255, 255);
 }
 .sidebar .me .photo img{
     width: 100%;
@@ -187,7 +187,10 @@ SIDEBAR
 .sidebar .me .link .lbl{}
 
 .app-content{
-    flex: 2;
+    display: inline-flex;
+    flex-direction: column;
+    float: left;
+    flex: 1;
     padding: 20px 40px 20px 20px;
 }
 
@@ -195,7 +198,10 @@ SIDEBAR
 /*
 HOME PAGE
 */
-.home-page{}
+.home-page{
+    display: inline-flex;
+    flex-direction: column;}
+
 .home-page .section{}
 .home-page .section .title{
     margin-bottom: 20px;
@@ -280,10 +286,10 @@ HOME PAGE
 }
 
 .home-page .top-tutors{
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .home-page .section .user-block{
-    margin: 0px 50px 30px 0px;
+    margin: 0px 10px 30px 0px;
 }
 .home-page .section .user-block .pic{
     width: 40px;
@@ -306,8 +312,8 @@ HOME PAGE
 RIGHTBAR
 */
 .rightbar{
-    flex: 1;
-    padding: 20px 0px;
+    flex: 2;
+    padding: 0px 0px;
 }
 
 .rightbar .search-box{
@@ -468,7 +474,7 @@ COURSE PREVIEW
     width: 100%;
 }
 .chat .messages .bubble .txt{
-    background: #c3ee04;
+    background: #0fbebe;
     line-height: 1;
     padding: 14px;
     border-radius: 20px 20px 20px 3px;

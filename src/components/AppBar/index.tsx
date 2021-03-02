@@ -16,13 +16,26 @@ export const AppBar = (props: { left?: JSX.Element; right?: JSX.Element }) => {
         <CurrentUserBadge />
       ) : (
         <ConnectButton
-          id="btnn"
           type="text"
           size="large"
           allowWalletChange={true}
           style={{ color: "#2abdd2" }}
         />
       )}
+      <Popover
+        placement="topRight"
+        title={LABELS.SETTINGS_TOOLTIP}
+        content={<Settings />}
+        trigger="click"
+      >
+        <Button
+          shape="circle"
+          size="large"
+          type="text"
+          icon={<SettingOutlined />}
+        />
+      </Popover>
+      {props.right}
     </div>
   );
 

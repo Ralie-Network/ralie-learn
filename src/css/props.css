@@ -39,8 +39,8 @@ select, textarea, input{
 .bl{display: block;}
 
 .cfff{color: #fff;}
-.c333{color: #333;}
-.c777{color: #777;}
+.c333{color: rgb(205, 242, 248);}
+.c777{color: rgb(255, 255, 255);}
 
 .s13{font-size: 13px;}
 .s14{font-size: 14px;}

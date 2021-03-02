@@ -13,6 +13,11 @@ export const AppLayout = React.memo((props: any) => {
     <div className="App wormhole-bg">
       <Layout title={LABELS.APP_TITLE}>
         <Header className="App-Bar">
+          <Link to="/">
+            <div className="app-title">
+              <h2>RALIE LEARN</h2>
+            </div>
+          </Link>
           <AppBar />
         </Header>
         <Content style={{ padding: "0 50px" }}>{props.children}</Content>
