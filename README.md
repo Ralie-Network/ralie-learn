@@ -1,4 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Ralie Learn
+
+![](https://i.imgur.com/99R3PkT.png)
+#### https://ralie.io/
+##### https://docs.ralie.io/
+- Decentralized MOOC (Massive Online Open Course) marketplace built to educate the people, meanwhile fascilating transactions through crypto;
+- First marketplace built for Ralie token utility, developed to compete with central providers without exorbinant fees, extended withdrawl periods or neglecting content quality
+- Currently in pre-development stages, with more features in the development pipeline
+- Compatible with all major browsers (IE8+), compatible Zepto.js and iPad;
+
+# 
+
+![](https://i.imgur.com/6e6vnCN.png)
+
+![](https://i.imgur.com/ANcCkAJ.png) ![]
+
 
 ## Available Scripts
 
