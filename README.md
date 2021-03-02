@@ -1,67 +1,53 @@
-# 🏗 Solana App Scaffold
-Scaffolding for a dapp built on Solana
+# Ralie Learn
 
-# Quickstart
+![](https://i.imgur.com/99R3PkT.png)
+#### https://ralie.io/
+##### https://docs.ralie.io/
+- Decentralized MOOC (Massive Online Open Course) marketplace built to educate the people, meanwhile fascilating transactions through crypto;
+- First marketplace built for Ralie token utility, developed to compete with central providers without exorbinant fees, extended withdrawl periods or neglecting content quality
+- Currently in pre-development stages, with more features in the development pipeline
+- Compatible with all major browsers (IE8+), compatible Zepto.js and iPad;
 
-```bash
-git clone https://github.com/solana-labs/dapp-scaffold.git
+# 
 
-cd dapp-scaffold
-```
+![](https://i.imgur.com/6e6vnCN.png)
 
-```bash
+![](https://i.imgur.com/ANcCkAJ.png) ![]
 
-npm install
 
-```
+## Available Scripts
 
-```bash
+In the project directory, you can run:
 
-npm start
+### `yarn start`
 
-```
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-# Environment Setup
-1. Install Rust from https://rustup.rs/
-2. Install Solana v1.5.0 or later from https://docs.solana.com/cli/install-solana-cli-tools#use-solanas-install-tool
-3. Install Node
-4. Install NPM
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-# Build Smart Contract (compiled for BPF)
+### `yarn test`
 
-```bash
-$ cargo build-bpf
-$ cargo test-bpf
-```
-# Directory structure
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## program
+### `yarn build`
 
-Solana program template in Rust
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### program/src/lib.rs
-* process_instruction function is used to run all calls issued to the smart contract
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-## src/actions
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Setup here actions that will interact with Solana programs using sendTransaction function
+### `yarn eject`
 
-## src/contexts
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-React context objects that are used propagate state of accounts across the application
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## src/hooks
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-Generic react hooks to interact with token program:
-* useUserBalance - query for balance of any user token by mint, returns:
-    - balance
-    - balanceLamports
-    - balanceInUSD
-* useAccountByMint
-* useTokenName
-* useUserAccounts
-
-## src/views
-
-* home - main page for your app
-* faucet - airdrops SOL on Testnet and Devnet
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
