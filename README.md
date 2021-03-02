@@ -12,7 +12,7 @@
 
 ![](https://i.imgur.com/6e6vnCN.png)
 
-![](https://i.imgur.com/ANcCkAJ.png) ![]
+![](https://i.imgur.com/ANcCkAJ.png)
 
 
 ## Available Scripts
