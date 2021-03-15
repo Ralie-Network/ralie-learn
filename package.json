@@ -27,6 +27,7 @@
     "node-notifier": "^8.0.1",
     "object-path": "^0.11.5",
     "react": "^16.13.1",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
